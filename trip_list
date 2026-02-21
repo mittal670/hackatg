@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>All Trips</h3>
+<table class="table">
+<tr>
+    <th>Vehicle</th>
+    <th>Driver</th>
+    <th>Status</th>
+</tr>
+
+{% for trip in trips %}
+<tr>
+    <td>{{ trip.vehicle }}</td>
+    <td>{{ trip.driver }}</td>
+    <td>{{ trip.status }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}

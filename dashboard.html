@@ -1,0 +1,29 @@
+
+
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card bg-success text-white p-3">
+            Active Fleet: {{ active_fleet }}
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-danger text-white p-3">
+            Maintenance Alerts: {{ maintenance_alerts }}
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-primary text-white p-3">
+            Utilization Rate: {{ utilization }}%
+        </div>
+    </div>
+</div>
+
+{% endblock %}
